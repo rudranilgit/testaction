@@ -1,0 +1,16 @@
+name: 'Demo-ActionLearner'
+description: 'This action is built for learning purpose'
+branding:
+  icon: 'shield'
+  color: 'blue'
+inputs:
+  user-name:
+    description: 'Name Of User'
+    required: true
+    default: ${{github.actor}}
+runs:
+    using: 'composite'
+    steps:
+        - name: Greet User
+          run: echo "HELLO ${{inputs.user}}" 
+          shell: bash       
