@@ -12,5 +12,5 @@ runs:
     using: 'composite'
     steps:
         - name: Greet User
-          run: echo "HELLO ${{inputs.user}}" 
+          run: echo "HELLO ${{inputs.user-name}}" 
           shell: bash       
