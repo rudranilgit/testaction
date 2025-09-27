@@ -1,7 +1,7 @@
 # testaction
 testaction publish to github marketplace
 name: Demo Greeting
-on: [push, workflow_dispatch]
+on: [push, workflow_dispatch,pullrequest]
 
 jobs:
   greet-user:
